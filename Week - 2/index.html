@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <link rel="icon" href="book.png">
+</head>
+<body>
+    <center>
+    <div>
+        <h1>Library</h1>
+        <img src="library.png" alt="Library Background" width="500">
+        <p>Welcome to the <b>library</b>!</p>
+        <p>Here you can find a collection of <span><i>books and resources</i></span> .</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Library Members</h2>
+        <img src="https://png.pngtree.com/png-clipart/20250516/original/pngtree-cute-anime-girl-with-book-and-bag-png-image_21012901.png" alt="Library Members" width="200">
+    </div>
+
+    <div>
+        <p>Here are some of our library members:</p>
+        <table border="10">
+            <tr>
+                <th>Member ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Image</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Urbi</td>
+                <td>urbi@gmail.com</td>
+                <td><img src="https://i.pinimg.com/736x/c1/fb/ab/c1fbab76344d964a35b8f38cece23a19.jpg" alt="Urbi" width="100"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Ishra</td>
+                <td>ishra@gmail.com</td>
+                <td><img src="https://i.pinimg.com/736x/e2/43/01/e2430198228c8d3cf1e76758dbbb9931.jpg" alt="Ishra" width="100"></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Registration</h2>
+        <p>Please fill out the form below to register as a library member.</p>
+        <form action="submit_registration.php" method="GET">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+             
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                </tr>
+               
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" placeholder="Enter your age" required></td>
+                </tr>
+               
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td><input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other" required> <label for="other">Other</label></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" placeholder="Enter your address" required></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="membership">Membership Type:</label></td>
+                    <td><select id="membership" name="membership" required>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="staff">Staff</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="file">File:</label></td>
+                    <td><input type="file" id="file" name="file" accept="image/*" required></td>
+                </tr>
+             
+                <tr>
+                    <td><label for="terms">Accept Terms and Conditions:</label></td>
+                    <td><input type="checkbox" id="terms" name="terms" required> I accept the terms and conditions</td>     
+                </tr>
+                
+           
+                
+                <tr>
+                    <td><button type="submit">Register</button></td>
+                </tr>
+            </tbody>
+        </table>
+        </form> 
+    </div>
+
+    <hr>
+    <div>
+        <h2></h2>
+        <p>Already have an account? <a href="https://www.aiub.edu/library">Sign In</a></p>
+    </div>
+    </center>
+</body>
+</html>
